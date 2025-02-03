@@ -97,7 +97,6 @@ exports.totalDonation = async (req, res) => {
               
                 campaignTotals[donation.campaignId] = 0;
             }
-           
             campaignTotals[donation.campaignId] += donation.amount;
         });
 
