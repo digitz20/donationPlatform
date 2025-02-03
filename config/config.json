@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "donation_platform",
-    "host": "127.0.0.1",
+    "username": "sql8760450",
+    "password": "PRyYG62NfX",
+    "database": "sql8760450",
+    "host": "sql8.freesqldatabase.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "sql8760450",
+    "password": "PRyYG62NfX",
+    "database": "sql8760450",
+    "host": "sql8.freesqldatabase.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "sql8760450",
+    "password": "PRyYG62NfX",
+    "database": "sql8760450",
+    "host": "sql8.freesqldatabase.com",
     "dialect": "mysql"
   }
 }
