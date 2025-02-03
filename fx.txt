@@ -1,0 +1,3 @@
+npx sequelize-cli model:generate --name campaign --attributes title:string,goalAmount:string
+
+npx sequelize-cli model:generate --name donation --attributes campaignId:string,userId:string,amount:string
