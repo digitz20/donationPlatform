@@ -85,6 +85,10 @@ exports.getAllDonation = async (req, res) => {
 
 
 
+
+
+
+
 exports.totalDonation = async (req, res) => {
     try {
         const donations = await donation.findAll(); 
