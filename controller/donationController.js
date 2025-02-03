@@ -65,7 +65,7 @@ exports.getAllDonation = async (req, res) => {
 //         }
 
 //         const newDonate = await donation.findAll({where: {campaignId: campaignId,
-//             // amount: {[Op.between]: [amount]}
+//           
 
 //         }})
 //         // console.log('newdonate: ',newDonate);
