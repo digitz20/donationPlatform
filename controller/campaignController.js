@@ -79,3 +79,34 @@ exports.createBulkCampaign = async(req, res) => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+exports.highestFundedCampaign = async (req, res) => {
+    try {
+        const highestCampaign = await campaign.findOne()
+
+        highestCampaign.sort({goalAmount: -1})
+
+       if(!highestCampaign) {
+        return res.status(404).json({messaga: 'no campaign found'})
+       }
+
+       res.status(200).json({message: 'kindly find the highest funded campaign below',
+        data: highestCampaign
+       })
+    } catch (error) {
+        res.status(500).json({message: 'error finding campaign', error:error.message})
+    }
+}
+
+
+
+

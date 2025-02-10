@@ -1,4 +1,4 @@
-const {createCampaign, getAllCampaign, getOneCampaign, createBulkCampaign} = require("../controller/campaignController")
+const {createCampaign, getAllCampaign, getOneCampaign, createBulkCampaign, highestFundedCampaign} = require("../controller/campaignController")
 
 const campaignRouter = require("express").Router()
 
@@ -10,6 +10,8 @@ campaignRouter.get("/getallcampaign" , getAllCampaign)
 campaignRouter.get("/getonecampaign/:id" , getOneCampaign)
 
 campaignRouter.post("/createbulkdonation" , createBulkCampaign)
+
+campaignRouter.get("/highestcampaign" , highestFundedCampaign)
 
 
 
